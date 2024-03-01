@@ -1,7 +1,7 @@
 package com.spaceInvader.model;
 
 
-public abstract class Actor  {
+public abstract class Actor implements IMovable{
     private Position position;
 
     public  Actor(Position position){
