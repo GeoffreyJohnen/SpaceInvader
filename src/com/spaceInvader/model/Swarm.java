@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Swarm implements IMovable{
     private ArrayList<IMovable> members;
 
+    public Swarm(){
+        this.members = new ArrayList<IMovable>();
+    }
     public void add(IMovable member){
         this.members.add(member);
     }

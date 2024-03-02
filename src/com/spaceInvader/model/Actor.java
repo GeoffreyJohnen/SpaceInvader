@@ -4,12 +4,16 @@ package com.spaceInvader.model;
 public abstract class Actor implements IMovable{
     private Position position;
 
-    public  Actor(Position position){
+    public Actor(Position position){
         this.position = position;
     }
 
     public void setPosition(Position position) {
         this.position = position;
+    }
+
+    public Position getPosition(){
+        return this.position;
     }
 
     public void move(int x, int y){

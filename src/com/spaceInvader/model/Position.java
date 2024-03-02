@@ -24,6 +24,10 @@ public class Position {
         this.y += y;
     }
 
+    public String toString(){
+        return "("+this.x+","+this.y+")";
+    }
+
     public double distanceSq(Position position){
         int distanceX = this.x - position.getX();
         int distanceY = this.y - position.getY();
